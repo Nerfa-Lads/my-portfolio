@@ -21,7 +21,6 @@
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Projects</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#contact" class="nav-cta">Hire Me</a></li>
@@ -39,34 +38,69 @@
       <div class="hero-shape hero-shape-2"></div>
       <div class="hero-shape hero-shape-3"></div>
     </div>
-    <div class="hero-content" data-reveal>
-      <p class="hero-eyebrow"><span class="dot"></span> Available for work</p>
-      <h1 class="hero-name">Nerfa Canacan<br><em>Ladtingan</em></h1>
-      <p class="hero-role">Graphic Designer</p>
-      <p class="hero-tagline">Crafting visual stories through typography, color, and intentional design that connects brands with people.</p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn-primary">View My Work</a>
-        <a href="#contact" class="btn-outline">Get In Touch</a>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <p class="hero-eyebrow hero-anim" style="--d:0s"><span class="dot"></span> Available for work</p>
+        <h1 class="hero-name hero-anim" style="--d:0.15s">Nerfa Canacan <em class="hero-name-shimmer">Ladtingan</em></h1>
+        <p class="hero-role hero-anim" style="--d:0.3s"><span class="role-type">Graphic Designer</span></p>
+        <p class="hero-tagline hero-anim" style="--d:0.45s">Crafting visual stories through <span class="tagline-highlight">typography</span>, <span class="tagline-highlight">color</span>, and intentional design that connects brands with people.</p>
+        <div class="hero-actions hero-anim" style="--d:0.6s">
+          <a href="#services" class="btn-primary">View My Work</a>
+          <a href="#contact" class="btn-outline">Get In Touch</a>
+          <a href="assets/files/cv.html" target="_blank" class="btn-cv" id="downloadCV">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download CV
+          </a>
+        </div>
+        <div class="hero-stats hero-anim" style="--d:0.75s">
+          <div class="stat"><span class="stat-num count-up" data-target="15">0</span><span class="stat-label">Projects</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num count-up" data-target="6">0</span><span class="stat-label">Design Types</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num" id="stat-year">0</span><span class="stat-label">Graduate</span></div>
+        </div>
       </div>
-      <div class="hero-stats">
-        <div class="stat"><span class="stat-num">15+</span><span class="stat-label">Projects</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-num">6+</span><span class="stat-label">Design Types</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-num">2026</span><span class="stat-label">Graduate</span></div>
+
+      <div class="hero-divider">
+        <span class="hero-divider-label">Design. Create. Inspire.</span>
+        <div class="hero-divider-line"></div>
       </div>
-    </div>
-    <div class="hero-image" data-reveal data-reveal-delay="2">
-      <div class="hero-img-wrap">
-        <img src="assets/img/Nerfa.jpg" alt="Nerfa Canacan Ladtingan" />
-        <div class="hero-img-badge">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          Graphic Designer
+
+      <div class="hero-right">
+        <!-- Status card -->
+        <div class="hero-status-card">
+          <span class="status-dot"></span>
+          <div>
+            <p class="status-title">Currently Available</p>
+            <p class="status-sub">Open to freelance &amp; full-time</p>
+          </div>
+        </div>
+
+        <!-- Design mockup -->
+        <div class="hero-mockup">
+          <div class="mockup-label">Featured Work</div>
+          <img src="assets/img/portfolio/portfolio-new-2.png" alt="NLush Branding" />
+          <div class="mockup-caption">NLush Branding</div>
+        </div>
+
+        <!-- Tool badges -->
+        <div class="hero-tools">
+          <div class="hero-tool-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+            Photoshop
+          </div>
+          <div class="hero-tool-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            Illustrator
+          </div>
+          <div class="hero-tool-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+            Canva
+          </div>
         </div>
       </div>
     </div>
   </section>
-
 
   <!-- ABOUT -->
   <section id="about">
@@ -74,7 +108,7 @@
       <div class="about-grid">
         <div class="about-image-col">
           <div class="about-img-wrap">
-            <img src="assets/img/about.jpg" alt="About Nerfa" />
+            <img src="assets/img/new.jpg" alt="About Nerfa" />
             <div class="about-tools">
               <div class="tool-badge">Photoshop</div>
               <div class="tool-badge">Illustrator</div>
@@ -93,20 +127,53 @@
             <div class="info-item"><span class="info-label">Phone</span><span class="info-value">09269124024</span></div>
             <div class="info-item"><span class="info-label">Available</span><span class="info-value available">Open to opportunities</span></div>
           </div>
-          <a href="#contact" class="btn-primary">Let's Work Together</a>
+          <a href="#contact" class="btn-primary btn-shine">Let's Work Together</a>
         </div>
       </div>
     </div>
   </section>
 
 
+  <!-- WHY HIRE ME -->
+  <section id="why-me">
+    <div class="container">
+      <div class="section-header center">
+        <p class="section-eyebrow" data-reveal>Why Work With Me</p>
+        <h2 class="section-title" data-reveal data-reveal-delay="1">What sets me apart</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card" data-reveal>
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Fast Turnaround</h3>
+          <p>I deliver quality designs on time, every time. Deadlines are taken seriously and I communicate clearly throughout the process.</p>
+        </div>
+        <div class="why-card" data-reveal data-reveal-delay="1">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h3>Attention to Detail</h3>
+          <p>Every pixel, spacing, and color choice is intentional. I care deeply about craft and making sure every design element has a purpose.</p>
+        </div>
+        <div class="why-card" data-reveal data-reveal-delay="2">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3>Client-Focused</h3>
+          <p>Your vision comes first. I listen carefully, ask the right questions, and create designs that truly represent your brand and goals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- SKILLS -->
   <section id="skills" class="section-dark">
     <div class="container">
       <div class="section-header center">
-        <p class="section-eyebrow">What I Do</p>
-        <h2 class="section-title">Skills &amp; Expertise</h2>
-        <p class="section-subtitle">A toolkit built through coursework, self-study, and hands-on project work.</p>
+        <p class="section-eyebrow" data-reveal>What I Do</p>
+        <h2 class="section-title" data-reveal data-reveal-delay="1">Skills &amp; Expertise</h2>
+        <p class="section-subtitle" data-reveal data-reveal-delay="2">A toolkit built through coursework, self-study, and hands-on project work.</p>
       </div>
       <div class="skills-grid">
         <div class="skill-card">
@@ -232,119 +299,6 @@
     </div>
   </section>
 
-  <!-- FEATURED PROJECTS -->
-  <section id="projects">
-    <div class="container">
-      <div class="section-header center">
-        <p class="section-eyebrow">Featured Work</p>
-        <h2 class="section-title">Design Projects</h2>
-        <p class="section-subtitle">Highlighted projects that demonstrate range, creativity, and technical skill.</p>
-      </div>
-      <div class="projects-grid">
-
-        <div class="project-card project-large">
-          <div class="project-img">
-            <img src="assets/img/portfolio/portfolio-1.jpg" alt="Social Media Graphics Collection" />
-            <div class="project-overlay">
-              <button class="project-view-btn" data-src="assets/img/portfolio/portfolio-1.jpg">View Project</button>
-            </div>
-          </div>
-          <div class="project-info">
-            <div class="project-tags"><span class="tag">Canva</span><span class="tag">Photoshop</span><span class="tag">Typography</span></div>
-            <h3>Social Media Graphics Collection</h3>
-            <p>Designed a series of promotional graphics applying typography, color theory, and layout principles. Created cohesive visual content optimized for engagement across social platforms.</p>
-            <div class="project-meta"><span>Branding &amp; Digital</span></div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-img">
-            <img src="assets/img/portfolio/portfolio-new-1.png" alt="App Icon Design" />
-            <div class="project-overlay">
-              <button class="project-view-btn" data-src="assets/img/portfolio/portfolio-new-1.png">View</button>
-            </div>
-          </div>
-          <div class="project-info">
-            <div class="project-tags"><span class="tag">Branding</span><span class="tag">Icon Design</span></div>
-            <h3>App Icon Design</h3>
-            <p>Custom app icon with a clean, modern aesthetic designed for strong visual impact at any size.</p>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-img">
-            <img src="assets/img/portfolio/portfolio-new-2.png" alt="NLush Branding" />
-            <div class="project-overlay">
-              <button class="project-view-btn" data-src="assets/img/portfolio/portfolio-new-2.png">View</button>
-            </div>
-          </div>
-          <div class="project-info">
-            <div class="project-tags"><span class="tag">Branding</span><span class="tag">Typography</span></div>
-            <h3>NLush Branding</h3>
-            <p>Brand identity design featuring cohesive typography, color palette, and visual language.</p>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-img">
-            <img src="assets/img/portfolio/portfolio-new-3.png" alt="Visionary In Focus" />
-            <div class="project-overlay">
-              <button class="project-view-btn" data-src="assets/img/portfolio/portfolio-new-3.png">View</button>
-            </div>
-          </div>
-          <div class="project-info">
-            <div class="project-tags"><span class="tag">Visual Design</span><span class="tag">Canva</span></div>
-            <h3>Visionary In Focus</h3>
-            <p>A creative visual design piece exploring composition, focus, and storytelling through imagery.</p>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-img">
-            <img src="assets/img/portfolio/portfolio-2.jpg" alt="Poster Design" />
-            <div class="project-overlay">
-              <button class="project-view-btn" data-src="assets/img/portfolio/portfolio-2.jpg">View</button>
-            </div>
-          </div>
-          <div class="project-info">
-            <div class="project-tags"><span class="tag">Print</span><span class="tag">Layout</span></div>
-            <h3>Promotional Poster</h3>
-            <p>High-impact poster design balancing visual hierarchy with bold typography and color.</p>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-img">
-            <img src="assets/img/portfolio/portfolio-5.jpg" alt="Invitation Design" />
-            <div class="project-overlay">
-              <button class="project-view-btn" data-src="assets/img/portfolio/portfolio-5.jpg">View</button>
-            </div>
-          </div>
-          <div class="project-info">
-            <div class="project-tags"><span class="tag">Stationery</span><span class="tag">Events</span></div>
-            <h3>Event Invitation</h3>
-            <p>Elegant event invitation with refined typography and a polished layout.</p>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-img">
-            <img src="assets/img/portfolio/portfolio-3.jpg" alt="Brochure Design" />
-            <div class="project-overlay">
-              <button class="project-view-btn" data-src="assets/img/portfolio/portfolio-3.jpg">View</button>
-            </div>
-          </div>
-          <div class="project-info">
-            <div class="project-tags"><span class="tag">Print</span><span class="tag">Layout</span></div>
-            <h3>Brochure Design</h3>
-            <p>Multi-page brochure with strong grid structure, clear information hierarchy.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
 
   <!-- PORTFOLIO GALLERY -->
   <section id="gallery" class="section-dark">
@@ -364,20 +318,20 @@
         <button class="filter-btn" data-filter="invitation">Invitation</button>
         <button class="filter-btn" data-filter="booth">Booth</button>
       </div>
-      <div class="gallery-grid" id="galleryGrid">
-        <div class="gallery-item" data-cat="branding"><img src="assets/img/portfolio/portfolio-new-1.png" alt="App Icon Design"><div class="gallery-overlay"><span>App Icon Design</span></div></div>
+      <div class="gallery-grid masonry-grid" id="galleryGrid">
+        <div class="gallery-item tall" data-cat="branding"><img src="assets/img/portfolio/portfolio-new-1.png" alt="App Icon Design"><div class="gallery-overlay"><span>App Icon Design</span></div></div>
         <div class="gallery-item" data-cat="branding"><img src="assets/img/portfolio/portfolio-new-2.png" alt="NLush Branding"><div class="gallery-overlay"><span>NLush Branding</span></div></div>
-        <div class="gallery-item" data-cat="branding"><img src="assets/img/portfolio/portfolio-new-3.png" alt="Visionary In Focus"><div class="gallery-overlay"><span>Visionary In Focus</span></div></div>
+        <div class="gallery-item wide" data-cat="branding"><img src="assets/img/portfolio/portfolio-new-3.png" alt="Visionary In Focus"><div class="gallery-overlay"><span>Visionary In Focus</span></div></div>
         <div class="gallery-item" data-cat="logo"><img src="assets/img/portfolio/portfolio-1.jpg" alt="Logo Design"><div class="gallery-overlay"><span>Logo Design</span></div></div>
-        <div class="gallery-item" data-cat="poster"><img src="assets/img/portfolio/portfolio-2.jpg" alt="Poster"><div class="gallery-overlay"><span>Promotional Poster</span></div></div>
+        <div class="gallery-item tall" data-cat="poster"><img src="assets/img/portfolio/portfolio-2.jpg" alt="Poster"><div class="gallery-overlay"><span>Promotional Poster</span></div></div>
         <div class="gallery-item" data-cat="brochure"><img src="assets/img/portfolio/portfolio-3.jpg" alt="Brochure Back"><div class="gallery-overlay"><span>Brochure Back</span></div></div>
         <div class="gallery-item" data-cat="brochure"><img src="assets/img/portfolio/portfolio-4.jpg" alt="Brochure Inside"><div class="gallery-overlay"><span>Brochure Inside</span></div></div>
-        <div class="gallery-item" data-cat="invitation"><img src="assets/img/portfolio/portfolio-5.jpg" alt="Invitation"><div class="gallery-overlay"><span>Event Invitation</span></div></div>
+        <div class="gallery-item wide" data-cat="invitation"><img src="assets/img/portfolio/portfolio-5.jpg" alt="Invitation"><div class="gallery-overlay"><span>Event Invitation</span></div></div>
         <div class="gallery-item" data-cat="packaging"><img src="assets/img/portfolio/portfolio-6.jpg" alt="Box Layout"><div class="gallery-overlay"><span>Box Layout</span></div></div>
         <div class="gallery-item" data-cat="packaging"><img src="assets/img/portfolio/portfolio-7.jpg" alt="Box Packaging"><div class="gallery-overlay"><span>Box Packaging</span></div></div>
-        <div class="gallery-item" data-cat="packaging"><img src="assets/img/portfolio/portfolio-9.jpg" alt="Paper Bag Layout"><div class="gallery-overlay"><span>Paper Bag Layout</span></div></div>
+        <div class="gallery-item tall" data-cat="packaging"><img src="assets/img/portfolio/portfolio-9.jpg" alt="Paper Bag Layout"><div class="gallery-overlay"><span>Paper Bag Layout</span></div></div>
         <div class="gallery-item" data-cat="packaging"><img src="assets/img/portfolio/portfolio-10.jpg" alt="Paper Bag Packaging"><div class="gallery-overlay"><span>Paper Bag Packaging</span></div></div>
-        <div class="gallery-item" data-cat="booth"><img src="assets/img/portfolio/portfolio-11.png" alt="Booth Front"><div class="gallery-overlay"><span>Booth — Front</span></div></div>
+        <div class="gallery-item wide" data-cat="booth"><img src="assets/img/portfolio/portfolio-11.png" alt="Booth Front"><div class="gallery-overlay"><span>Booth — Front</span></div></div>
         <div class="gallery-item" data-cat="booth"><img src="assets/img/portfolio/portfolio-15.png" alt="Booth Inside"><div class="gallery-overlay"><span>Booth — Inside</span></div></div>
       </div>
     </div>

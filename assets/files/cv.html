@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nerfa Canacan Ladtingan — CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; color: #222; background: #fff; font-size: 13px; line-height: 1.6; }
+
+    .page { max-width: 780px; margin: 0 auto; padding: 48px 48px; }
+
+    /* Header */
+    .cv-header { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: start; border-bottom: 2px solid #c9a96e; padding-bottom: 24px; margin-bottom: 28px; }
+    .cv-name { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; color: #0a0a0a; line-height: 1.1; margin-bottom: 6px; }
+    .cv-title { font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #c9a96e; margin-bottom: 12px; }
+    .cv-tagline { font-size: 13px; color: #555; max-width: 440px; line-height: 1.7; }
+    .cv-contact { text-align: right; display: flex; flex-direction: column; gap: 5px; }
+    .cv-contact a, .cv-contact span { font-size: 12px; color: #444; text-decoration: none; display: block; }
+    .cv-contact a:hover { color: #c9a96e; }
+
+    /* Sections */
+    .cv-section { margin-bottom: 26px; }
+    .cv-section-title {
+      font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase;
+      color: #c9a96e; margin-bottom: 14px; padding-bottom: 6px;
+      border-bottom: 1px solid #f0e8d8;
+    }
+
+    /* Two column layout */
+    .cv-body { display: grid; grid-template-columns: 1fr 220px; gap: 36px; }
+    .cv-main {}
+    .cv-sidebar {}
+
+    /* Timeline items */
+    .cv-item { margin-bottom: 18px; padding-left: 14px; border-left: 2px solid #e8e8e8; position: relative; }
+    .cv-item::before { content: ''; position: absolute; left: -5px; top: 5px; width: 8px; height: 8px; background: #c9a96e; border-radius: 50%; }
+    .cv-item-title { font-size: 14px; font-weight: 700; color: #111; margin-bottom: 2px; }
+    .cv-item-sub { font-size: 12px; font-weight: 600; color: #c9a96e; margin-bottom: 3px; }
+    .cv-item-date { font-size: 11px; color: #888; margin-bottom: 6px; }
+    .cv-item ul { padding-left: 16px; list-style: disc; }
+    .cv-item ul li { font-size: 12px; color: #444; margin-bottom: 3px; }
+
+    /* Skills */
+    .skill-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+    .skill-name { font-size: 12px; font-weight: 600; color: #333; }
+    .skill-bar-wrap { width: 110px; height: 4px; background: #f0e8d8; border-radius: 4px; overflow: hidden; }
+    .skill-bar-fill { height: 100%; background: linear-gradient(90deg, #c9a96e, #e8c99a); border-radius: 4px; }
+
+    /* Tags */
+    .tag-list { display: flex; flex-wrap: wrap; gap: 6px; }
+    .cv-tag { background: #fdf6ec; border: 1px solid #e8c99a; color: #a07840; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 50px; }
+
+    /* Info list */
+    .info-list { display: flex; flex-direction: column; gap: 8px; }
+    .info-row { display: flex; flex-direction: column; gap: 1px; }
+    .info-label { font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #aaa; }
+    .info-value { font-size: 12px; font-weight: 600; color: #333; }
+
+    /* Print */
+    @media print {
+      body { background: #fff; }
+      .page { padding: 28px 32px; }
+      .no-print { display: none; }
+    }
+
+    /* Print button */
+    .print-btn {
+      position: fixed; bottom: 24px; right: 24px;
+      background: #c9a96e; color: #000; font-weight: 700;
+      font-size: 13px; padding: 12px 24px; border-radius: 50px;
+      border: none; cursor: pointer; box-shadow: 0 4px 16px rgba(201,169,110,0.4);
+      font-family: 'Inter', sans-serif;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .print-btn:hover { background: #e8c99a; }
+    @media print { .print-btn { display: none; } }
+  </style>
+</head>
+<body>
+
+<button class="print-btn no-print" onclick="window.print()">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+  Save as PDF
+</button>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="cv-header">
+    <div>
+      <div class="cv-name">Nerfa Canacan Ladtingan</div>
+      <div class="cv-title">Graphic Designer</div>
+      <div class="cv-tagline">Fresh graduate and graphic designer with hands-on experience in branding, print design, packaging, and digital media. Proficient in Adobe Creative Suite and Canva.</div>
+    </div>
+    <div class="cv-contact">
+      <span>Zamboanga Del Sur, Philippines</span>
+      <a href="mailto:nerfaladtingan@gmail.com">nerfaladtingan@gmail.com</a>
+      <span>09269124024</span>
+      <a href="https://www.linkedin.com/in/nerfa-ladtingan" target="_blank">linkedin.com/in/nerfa-ladtingan</a>
+    </div>
+  </div>
+
+  <div class="cv-body">
+    <div class="cv-main">
+
+      <!-- EXPERIENCE -->
+      <div class="cv-section">
+        <div class="cv-section-title">Experience</div>
+
+        <div class="cv-item">
+          <div class="cv-item-title">Freelance Graphic Designer</div>
+          <div class="cv-item-sub">Self-employed</div>
+          <div class="cv-item-date">2023 — 2024</div>
+          <ul>
+            <li>Designed logos and brand materials for local clients</li>
+            <li>Created social media graphics using Canva and Adobe Photoshop</li>
+            <li>Produced promotional posters and print collateral</li>
+            <li>Delivered projects based on client briefs and feedback</li>
+          </ul>
+        </div>
+
+        <div class="cv-item">
+          <div class="cv-item-title">Academic Design Projects</div>
+          <div class="cv-item-sub">J.H. Cerilles State College</div>
+          <div class="cv-item-date">2023 — 2024</div>
+          <ul>
+            <li>Completed multi-discipline project covering logo, poster, brochure, packaging, and invitation design</li>
+            <li>Applied color theory, typography, and layout principles</li>
+            <li>Presented design work and incorporated instructor feedback</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- EDUCATION -->
+      <div class="cv-section">
+        <div class="cv-section-title">Education</div>
+        <div class="cv-item">
+          <div class="cv-item-title">BS Information Technology</div>
+          <div class="cv-item-sub">J.H. Cerilles State College</div>
+          <div class="cv-item-date">2022 — 2026 | Fresh Graduate</div>
+          <ul>
+            <li>Introduction to Design Principles</li>
+            <li>Web Design Fundamentals</li>
+            <li>Graphic Design & UI/UX Design</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PROJECTS -->
+      <div class="cv-section">
+        <div class="cv-section-title">Design Projects</div>
+        <div class="cv-item">
+          <div class="cv-item-title">NLush Branding</div>
+          <div class="cv-item-date">Brand Identity Design</div>
+          <ul><li>Full brand identity including logo, color palette, and typography system</li></ul>
+        </div>
+        <div class="cv-item">
+          <div class="cv-item-title">Visionary In Focus</div>
+          <div class="cv-item-date">Visual Design & Digital Art</div>
+          <ul><li>Creative visual design exploring composition and storytelling through imagery</li></ul>
+        </div>
+        <div class="cv-item">
+          <div class="cv-item-title">Packaging & Print Collection</div>
+          <div class="cv-item-date">Packaging Design</div>
+          <ul><li>Box, eco bag, and paper bag packaging with full layout and print-ready files</li></ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="cv-sidebar">
+
+      <!-- SKILLS -->
+      <div class="cv-section">
+        <div class="cv-section-title">Design Skills</div>
+        <div class="skill-row"><span class="skill-name">Adobe Photoshop</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:88%"></div></div></div>
+        <div class="skill-row"><span class="skill-name">Adobe Illustrator</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:82%"></div></div></div>
+        <div class="skill-row"><span class="skill-name">Canva</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:95%"></div></div></div>
+        <div class="skill-row"><span class="skill-name">Typography</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:90%"></div></div></div>
+        <div class="skill-row"><span class="skill-name">Branding</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:85%"></div></div></div>
+        <div class="skill-row"><span class="skill-name">Layout Design</span><div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:87%"></div></div></div>
+      </div>
+
+      <!-- SERVICES -->
+      <div class="cv-section">
+        <div class="cv-section-title">Services Offered</div>
+        <div class="tag-list">
+          <span class="cv-tag">Logo Design</span>
+          <span class="cv-tag">Invitations</span>
+          <span class="cv-tag">Marketing Design</span>
+          <span class="cv-tag">Brochures</span>
+          <span class="cv-tag">Packaging</span>
+          <span class="cv-tag">Posters</span>
+          <span class="cv-tag">Branding</span>
+        </div>
+      </div>
+
+      <!-- PERSONAL INFO -->
+      <div class="cv-section">
+        <div class="cv-section-title">Personal Info</div>
+        <div class="info-list">
+          <div class="info-row"><span class="info-label">Birthday</span><span class="info-value">February 10, 2004</span></div>
+          <div class="info-row"><span class="info-label">Citizenship</span><span class="info-value">Filipino</span></div>
+          <div class="info-row"><span class="info-label">Location</span><span class="info-value">Zamboanga Del Sur</span></div>
+          <div class="info-row"><span class="info-label">Status</span><span class="info-value">Available for work</span></div>
+        </div>
+      </div>
+
+      <!-- LANGUAGES -->
+      <div class="cv-section">
+        <div class="cv-section-title">Languages</div>
+        <div class="info-list">
+          <div class="info-row"><span class="info-label">Filipino</span><span class="info-value">Native</span></div>
+          <div class="info-row"><span class="info-label">English</span><span class="info-value">Proficient</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

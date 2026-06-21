@@ -145,7 +145,30 @@ style.textContent = '@keyframes fadeIn { from { opacity:0; transform:scale(0.95)
 document.head.appendChild(style);
 
 // =========================================================
-// LIGHTBOX
+// COUNT UP STATS
+// =========================================================
+function countUp(el, target, suffix, duration) {
+  let start = 0;
+  const step = target / (duration / 16);
+  const timer = setInterval(() => {
+    start += step;
+    if (start >= target) {
+      el.textContent = target + suffix;
+      clearInterval(timer);
+    } else {
+      el.textContent = Math.floor(start) + suffix;
+    }
+  }, 16);
+}
+
+// Run after hero animates in
+setTimeout(() => {
+  document.querySelectorAll('.count-up').forEach(el => {
+    countUp(el, parseInt(el.dataset.target), '+', 1200);
+  });
+  const yearEl = document.getElementById('stat-year');
+  if (yearEl) countUp(yearEl, 2026, '', 1500);
+}, 900);
 // =========================================================
 const lightbox        = document.getElementById('lightbox');
 const lightboxOverlay = document.getElementById('lightboxOverlay');
